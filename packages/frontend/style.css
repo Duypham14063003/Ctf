@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #fda41d;
+  --secondary-color: #fde9c7;
+  --blue-color: #00d1ff;
+  --red-color: #fd1d1d;
+  --gray-color: #212222;
+  --white-color: #ffffff;
+  --scrollbarBG: black;
+  --thumbBG: #fde9c7;
+  --bg-main-color: black;
+  --bg-footer-color: #fde9c7;
+  --height-header: 70px;
+  --color-table: #8080807c;
+  --color-table-hover: #6060609e;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-main-color);
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  scroll-behavior: smooth;
+  font-size: 12px !important;
+  background-color: #000000;
+}
+div {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd {
+  padding: 0 75px;
+}
+.btn {
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}
+
+.td-title {
+  font-size: 2.65rem;
+  display: inline-block;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-weight: bold;
+  position: relative;
+  margin: auto;
+  color: #fde9c7;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #000000 !important;
+  font-size: 2rem !important;
+}
+
+.slick-slide {
+  text-align: center;
+}
+
+.slick-slide::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.ant-drawer .ant-drawer-content {
+  background-color: #212529;
+  color: white;
+}
+.ant-drawer .ant-drawer-header {
+  color: white;
+}
+.ant-drawer .ant-drawer-title {
+  color: white;
+}
+.text-color-primary {
+  color: var(--primary-color);
+}
+
+/* css */
+.ant-table-cell-row-hover {
+  background-color: var(--color-table-hover) !important;
+  cursor: pointer;
+}

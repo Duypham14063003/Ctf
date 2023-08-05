@@ -1,0 +1,6 @@
+npx create-nx-workspace@latest --preset=ts
+cd ctf
+npm i -D @nrwl/express
+npm i -D @nrwl/react
+npx nx g @nrwl/express:app backend --preset=ts
+npx nx g @nrwl/react:app frontend --preset=scss
